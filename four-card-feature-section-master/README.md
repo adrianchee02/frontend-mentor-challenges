@@ -61,7 +61,7 @@ I will work closely with using "divs". I realised that using tons of divs will c
 
 ### Useful resources
 
-- [Box-Shadow](box shadow angular material) - This website is very useful for searching that box shadow you wanted.
+- [Box-Shadow](https://codepen.io/sdthornton/pen/wBZdXq) - This website is very useful for searching that box shadow you wanted.
 - [Florin Pop](https://www.youtube.com/watch?v=PcSUEo0P0GU) - This is an amazing video which guide me through the project. Helped me to understand my problem and what should I have done. 
 
 ## Author
