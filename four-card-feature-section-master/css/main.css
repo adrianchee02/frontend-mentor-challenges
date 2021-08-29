@@ -1,0 +1,188 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: var(--ff);
+  font-size: var(--fs-15);
+  background-color: var(--clr-light-gray);
+}
+
+header p {
+  font-size: 18px;
+}
+
+h1 {
+  color: var(--clr-grayish-blue);
+  font-weight: var(--fw-200);
+}
+
+p {
+  color: var(--clr-grayish-blue);
+  font-weight: var(--fw-400);
+  font-size: 14px;
+}
+
+span, h2 {
+  font-weight: var(--fw-600);
+  color: var(--clr-dark-blue);
+}
+
+:root {
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-blue: hsl(212, 86%, 64%);
+  --clr-dark-blue: hsl(234, 12%, 34%);
+  --clr-grayish-blue: hsl(229, 6%, 66%);
+  --clr-light-gray: hsl(0, 0%, 98%);
+  --ff: "Poppins", sans-serif;
+  --fw-200: 200;
+  --fw-400: 400;
+  --fw-600: 600;
+  --fs-15: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1580px;
+  margin: 0 auto;
+}
+
+.box {
+  background-color: white;
+  width: 350px;
+  padding: 30px;
+  margin: 15px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.09), 0 15px 12px rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.box img {
+  display: block;
+  margin-left: auto;
+}
+
+.box p {
+  margin: 15px 0 30px;
+}
+
+.box::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box-cyan:after {
+  background-color: var(--clr-cyan);
+}
+
+.box-red:after {
+  background-color: var(--clr-red);
+}
+
+.box-orange:after {
+  background-color: var(--clr-orange);
+}
+
+.box-blue:after {
+  background-color: var(--clr-blue);
+}
+
+.box-push {
+  transform: translateY(50%);
+}
+
+@media (max-width: 775px) {
+  .box-push {
+    transform: translateY(0);
+  }
+}
+header {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 375px;
+}
+
+header p {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
