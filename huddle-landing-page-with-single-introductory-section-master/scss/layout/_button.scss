@@ -1,0 +1,11 @@
+button {
+    border: none;
+    border-radius: 23px;
+    padding: 13px 60px;
+    margin-top: 25px;
+}
+
+button:hover {
+    background-color: var(--clr-magenta);
+    color: white;
+}
