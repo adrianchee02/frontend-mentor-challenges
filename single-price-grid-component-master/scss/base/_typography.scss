@@ -1,0 +1,45 @@
+body {
+    background-color: var(--clr-gray);
+    font-family: var(--ff-karla);
+    font-size: var(--fs-16);
+    font-weight: 400;
+}
+
+.box-white {
+    background-color: white;
+
+    h2 {
+        color: var(--clr-cyan);
+    }
+
+    h3 {
+        color: var(--clr-yellow);
+    }
+
+    p {
+        color: var(--clr-blue);
+    }
+}
+
+.box-cyan {
+    background-color: var(--clr-cyan);
+    color: var(--clr-gray);
+
+    span {
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    button {
+        color: var(--clr-gray);
+        background-color: var(--clr-yellow);
+        border: none;
+        border-radius: 6px;
+        font-size: 20px;
+    }
+}
+
+.box-green {
+    background-color: var(--clr-green);
+    color: var(--clr-gray);
+}

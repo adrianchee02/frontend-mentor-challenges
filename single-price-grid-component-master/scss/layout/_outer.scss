@@ -1,0 +1,25 @@
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 375px;
+    border-radius: 6px;
+    overflow: hidden;
+    display: grid;
+}
+
+@media only screen and (min-width: 768px){
+    .container {
+        min-width: 640px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .box-white {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+}
